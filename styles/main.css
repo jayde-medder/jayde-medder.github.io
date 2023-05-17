@@ -1,16 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Ubuntu+Mono&display=swap');
-.back-text{
-  font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(89, 0, 255);
-  font-size: 15px;
-  position: absolute;
-  top: 5px;
-  left: 5px;
+
+a:link{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  background-color: rgb(22, 0, 63);
 }
 
 h1{
   font-size: 60px;
-  font-family: Ubuntu Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(89, 0, 255);
   padding: 0px;
 }
@@ -43,6 +54,7 @@ body{
   border: 0.5px solid rgb(89, 0, 255);
   @media(min-width:56.25em){
     flex-basis: 44%;
+    flex-direction: column;
   }
   min-width: 300px;
   position: relative;
