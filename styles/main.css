@@ -1,15 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-body{
-  background-color: black;
+.back-text{
+  font-family: Roboto;
+  color: rgb(89, 0, 255);
+  font-size: 15px;
+  position: absolute;
+  top: 5px;
+  left: 5px;
 }
 
 h1{
-  background-color: black;
-  font-family: Roboto;
+  font-size: 40px;
 }
 
-.accordion-body{
+h2{
+  font-size: 25px;
+}
+
+h3{
+  font-size: 22px;
+}
+
+body{
   background-color: black;
   font-family: Roboto;
   color: rgb(89, 0, 255);
@@ -26,6 +38,7 @@ h1{
 }
 
 .accordion .label {
+  background-color: black;
   position: relative;
   padding: 10px 0;
   font-size: 30px;
@@ -60,7 +73,7 @@ h1{
 }
 
 .accordion .container.active .content {
-  height: 150px;
+  height: 5em;
 }
 
 .accordion .container.active .label::before {
