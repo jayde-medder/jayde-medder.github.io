@@ -1,20 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
 h1{
   font-family: Roboto;
 }
 
-body{
+.accordion-body{
+  width: auto;
+  background-color: black;
   font-family: Roboto;
 }
 
 .accordion {
-  width: 800px;
-  margin: 90px auto;
-  color: black;
-  background-color: white;
-  padding: 45px 45px;
+  width: auto;
+  color: rgb(124, 91, 255);
+  background-color: rgb(255, 255, 255);
+  padding: 40px 100px;
 }
 
 .accordion .container {
@@ -26,13 +26,13 @@ body{
   position: relative;
   padding: 10px 0;
   font-size: 30px;
-  color: black;
+  color: rgb(124, 91, 255);
   cursor: pointer;
 }
 
 .accordion .label::before {
   content: '$';
-  color: black;
+  color: rgb(124, 91, 255);
   position: absolute;
   top: 50%;
   right: -5px;
@@ -46,7 +46,7 @@ body{
   height: 0;
   font-size: 20px;
   text-align: justify;
-  width: 780px;
+  width: 70vw;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -54,7 +54,7 @@ body{
 .accordion hr {
   width: 100;
   margin-left: 0;
-  border: 1px solid grey;
+  border: 0.5px solid rgb(124, 91, 255);
 }
 
 .accordion .container.active .content {
