@@ -28,22 +28,29 @@ body{
   font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(89, 0, 255);
   padding: 5vh 5vw;
-  border: 0.5px solid rgb(89, 0, 255);
 }
 
 .accordion {
+  @media(min-width: 56.25em){
+    display: flex;
+    flex-wrap: wrap;
+    border: 0.5px solid black;
+  }
   border: 0.5px solid rgb(89, 0, 255);
 }
 
 .accordion .container {
-  display: flex;
-  flex-direction: column;
-  flex-wrap: wrap;
+  border: 0.5px solid rgb(89, 0, 255);
+  @media(min-width:56.25em){
+    flex-basis: 44%;
+  }
+  min-width: 300px;
   position: relative;
   margin: 10px 10px;
 }
 
 .accordion .label {
+  min-width: 300px;
   border: 0.5px solid rgb(89, 0, 255);
   position: relative;
   padding: 10px 10px;
