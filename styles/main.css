@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Ubuntu+Mono&display=swap');
 .back-text{
-  font-family: Roboto Mono;
+  font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(89, 0, 255);
   font-size: 15px;
   position: absolute;
@@ -9,8 +9,8 @@
 }
 
 h1{
-  font-size: 70px;
-  font-family: Ubuntu Mono;
+  font-size: 60px;
+  font-family: Ubuntu Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(89, 0, 255);
   padding: 0px;
 }
@@ -25,7 +25,7 @@ h3{
 
 body{
   background-color: rgb(2,2,2);
-  font-family: Roboto Mono;
+  font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(89, 0, 255);
   padding: 5vh 5vw;
   border: 0.5px solid rgb(89, 0, 255);
@@ -72,7 +72,7 @@ body{
   padding: 10px 10px;
   height: 0em;
   font-size: 20px;
-  text-align: justify;
+  text-align: left;
   overflow: hidden;
   transition: 0.5s;
 }
