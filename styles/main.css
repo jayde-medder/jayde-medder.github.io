@@ -53,17 +53,16 @@ body{
   @media(min-width: 56.25em){
     display: flex;
     flex-wrap: wrap;
-    border: 0.5px solid black;
     align-items: baseline;
-    /*min-height: 100px;*/
   }
   border: 0.5px solid rgb(89, 0, 255);
+  
 }
 
 .accordion .container {
   border: 0.5px solid rgb(89, 0, 255);
   @media(min-width:56.25em){
-    flex-basis: 44%;
+    flex-basis: 47%;
     flex-direction: column;
   }
   position: relative;
