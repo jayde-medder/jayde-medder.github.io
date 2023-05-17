@@ -19,11 +19,19 @@ a:hover{
   background-color: rgb(22, 0, 63);
 }
 
+.goback{
+  font-size: 18px;
+  position: absolute;
+  color: rgb(89, 0, 255);
+  margin-top: 5px;
+  margin-left: 5px;
+}
+
+
 h1{
-  font-size: 60px;
+  font-size: 50px;
   font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: rgb(89, 0, 255);
-  padding: 0px;
 }
 
 h2{
@@ -62,11 +70,11 @@ body{
 }
 
 .accordion .label {
-  min-width: 300px;
+  min-width: 200px;
   border: 0.5px solid rgb(89, 0, 255);
   position: relative;
   padding: 10px 10px;
-  font-size: 30px;
+  font-size: 25px;
   color: rgb(89, 0, 255);
   cursor: pointer;
 }
