@@ -1,20 +1,23 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
 
-h1{
-  font-family: Roboto;
+body{
+  background-color: black;
 }
 
-.accordion-body{
-  width: auto;
+h1{
   background-color: black;
   font-family: Roboto;
 }
 
+.accordion-body{
+  background-color: black;
+  font-family: Roboto;
+  color: rgb(89, 0, 255);
+  padding: 5vh 5vw;
+}
+
 .accordion {
-  width: auto;
-  color: rgb(124, 91, 255);
-  background-color: rgb(255, 255, 255);
-  padding: 40px 100px;
+  background-color: black;
 }
 
 .accordion .container {
@@ -26,27 +29,26 @@ h1{
   position: relative;
   padding: 10px 0;
   font-size: 30px;
-  color: rgb(124, 91, 255);
+  color: rgb(89, 0, 255);
   cursor: pointer;
 }
 
 .accordion .label::before {
-  content: '$';
-  color: rgb(124, 91, 255);
+  content: '+';
+  color: rgb(89, 0, 255);
   position: absolute;
   top: 50%;
-  right: -5px;
+  right: 10px;
   font-size: 30px;
   transform: translateY(-50%);
 }
 
 .accordion .content {
   position: relative;
-  background: white;
+  background: black;
   height: 0;
   font-size: 20px;
   text-align: justify;
-  width: 70vw;
   overflow: hidden;
   transition: 0.5s;
 }
@@ -54,7 +56,7 @@ h1{
 .accordion hr {
   width: 100;
   margin-left: 0;
-  border: 0.5px solid rgb(124, 91, 255);
+  border: 0.5px solid rgb(89, 0, 255);
 }
 
 .accordion .container.active .content {
@@ -62,6 +64,6 @@ h1{
 }
 
 .accordion .container.active .label::before {
-  content: '???';
+  content: '-';
   font-size: 30px;
 }
