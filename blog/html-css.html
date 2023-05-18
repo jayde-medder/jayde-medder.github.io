@@ -23,16 +23,40 @@
         <div class="box orange"></div>
         <div class="box green"></div>
       </div>
-      <div class="demotext">Without specifying position attributes for the boxes they all stack one after the other and their positions are not affected by top, bottom, left or right properties.</div>
+      <div class="demotext">Without specifying position attributes for the boxes their positions are not affected by top, bottom, left or right properties. They are set by default to static.</div>
     </div>
     <p></p>
     <hr>
     <p></p>
     <div class="demos">
-      <div class="demotext">Without specifying position attributes for the boxes they all stack one after the other and their positions are not affected by top, bottom, left or right properties.</div>
+      <div class="demotext">Changing an elements position property to relative will allow it to change it's position via the top, left, bottom, right properties.</div>
+      <div class="demoboxes">
+        <div class="box purple relbox"></div>
+        <div class="box teal"></div>
+        <div class="box orange"></div>
+        <div class="box green"></div>
+      </div>
+    </div>
+    <p></p>
+    <hr>
+    <p></p>
+    <div class="demos">
       <div class="demoboxes">
         <div class="box purple"></div>
         <div class="box teal"></div>
+        <div class="box orange absbox"></div>
+        <div class="box green"></div>
+      </div>
+      <div class="demotext">Absolute positioning will take an element out of the normal flow of the page. Here the green square moves up to take oranges place. Note that my parent box here has it's position set to relative. Therefore setting Orange to right: 10px; kept it inside the square.</div>
+    </div>
+    <p></p>
+    <hr>
+    <p></p>
+    <div class="demos">
+      <div class="demotext">This annoying teal box that's been following you down the page has it's position fixed! It has also been taken out of the natural flow of the page just like with Absolute.</div>
+      <div class="demoboxes">
+        <div class="box purple"></div>
+        <div class="box teal fixbox"></div>
         <div class="box orange"></div>
         <div class="box green"></div>
       </div>
