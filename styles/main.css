@@ -27,6 +27,10 @@ a:hover{
   left: 5px;
 }
 
+hr{
+  border-color: rgb(89, 0, 255);
+}
+
 
 h1{
   font-size: 40px;
@@ -117,4 +121,57 @@ body{
 .accordion .container.active .label::before {
   content: '-';
   font-size: 30px;
+}
+
+.demos{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.demoboxes{
+  @media(max-width:371px){
+    height: 6em;
+    width: 6em;
+  }
+  height: 8em;
+  width: 8em;
+  border: 0.5px solid rgb(89, 0, 255);
+  margin: 10px 10px;
+}
+
+.box{
+  @media(max-width:371px){
+    height: 1.5em;
+    width: 1.5em;
+  }
+  height: 2em;
+  width: 2em;
+}
+
+.purple{
+  background-color: rgb(109, 56, 207);
+}
+
+.teal{
+  background-color: rgb(0, 180, 159);
+}
+
+.orange{
+  background-color: rgb(218, 138, 39);
+}
+
+.green{
+  background-color: rgb(97, 173, 21);
+}
+
+
+
+.demotext{
+  width: 40vw;
+  @media(max-width:400px){
+    font-size:12px;
+  }
+  font-size: 14px;
+  margin: 10px 10px;
 }
