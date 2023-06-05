@@ -4,9 +4,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CSS Concepts</title>
     <link href="../styles/main.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="/path/to/styles/default.min.css">
-    <script src="/path/to/highlight.min.js"></script>
-    <script>hljs.highlightAll();</script>
     <div class="goback"><a href="../index.html">Go Back</a></div>
     </head>
   <h1>JavaScript DOM</h1>
@@ -18,23 +15,57 @@
     <p>Control flow is the order in which a computer carries out defined processes. By using loops, we can check through a set of information. By utilizing these features we can modify and assess varying input data.</p>
     <p>Here’s a day to day example of how control flow and looping works. For simplicity, the inner workings of the washDish function are not yet defined.</p>
     <pre>
-      <code>let dishes = [‘pot’, ‘pan’, ‘plate’, ‘big plate’, ‘ramekin’, tiny bowl’]	//this is an array of dishes
+      <code>
+let dishes = [‘pot’, ‘pan’, ‘plate’, ‘big plate’, ‘ramekin’, tiny bowl’]	//this is an array of dishes
 
-        washDish(dish){	//here’s our process for washing a dish!
-          scrub(dish)
-          rinse(dish)	//we haven’t yet added functions for scrub() and rinse()
-          addtoDryingRack(dish)	//maybe this one could take said dish out of the dishes array and add to a new array full of items in the drying rack!
-        }
-        
-        doTheDishes(setOfDishes){		//our process for doing a set of dishes!
-          For each(dish in setOfDishes){	//this loop says for each dish we will do the washDish function!
-            washDish(dish)
-          }
-        }
+washDish(dish){	/*here’s our process for washing a dish!*/
+  scrub(dish)
+  rinse(dish)	//we haven’t yet added functions for scrub() and rinse()
+  addtoDryingRack(dish)	//maybe this one could take said dish out of the dishes array and add to a new array full of items in the drying rack!
+}
 
-        doTheDishes(dishes) //here we are calling the function. This says, “you now know how to do the dishes so go and get started!”
+doTheDishes(setOfDishes){		//our process for doing a set of dishes!
+  For each(dish in setOfDishes){	//this loop says for each dish we will do the washDish function!
+    washDish(dish)
+  }
+}
+
+doTheDishes(dishes) //here we are calling the function. This says, “you now know how to do the dishes so go and get started!”
+</code>
+      </pre>
+      <p>When we do the dishes, we take each dish; wash, rinse, and add to the drying rack, before doing the next dish. This is what is happening here!</p>
+      <hr>
+      <h3>What is the DOM?</h3>
+      <p>The document object model is the structure that defines our web pages. It is organised  hierarchically so that parents can define how children behave but not the other way around. Referring back to the analogy about a film crew, if HTML is the writer and the parent is the script, the actor (child) can’t say “Hey I think we should change the script”, but the director (JavaScript) can! JavaScript gives us the ability to manipulate the DOM.</p>
+      <hr>
+      <h3>The difference between accessing data from arrays and objects.</h3>
+      <p>Arrays are essentially lists of data i.e. a list of characters in the film:</p>
+      <pre>
+        <code>const characters = [‘Kate’, ‘Eric’, ‘Joaquin’]</code>
+      </pre>
+      <p>We access data at points in the array with an index - characters[1] would return ‘Eric’</p>
+      <br>
+      <p>Objects can contain more information about the object </p>
+      <pre>
+        <code>
+const character = {
+  name: 'Kate',
+  age: '32',
+  occupation: 'Dish Washer',
+}
         </code>
       </pre>
-      
+      <p>To access the value of age in this character object we can use character.age, which gives ‘32’</p>
+      <br>
+      <p>You could store this information in an array i.e.</p>
+      <pre>
+        <code>
+const character = [‘Kate’, ‘32’, ‘Dishwasher’]
+        </code>
+      </pre>
+      <p>But due to the nature of the information, and for ease of future programming, it’s best to use an object in this case!</p>
+      <hr>
+      <h3>What are functions and why are they helpful?</h3>
+      <p>Functions carry out tasks that are likely to be used multiple times. For instance imagine having to tell someone how to wash a dish every time they finished another. Functions give the code the ability to recall the task without it having to be typed out again and again.</p>
   </body>
 </html>

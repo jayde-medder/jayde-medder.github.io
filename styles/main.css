@@ -44,6 +44,7 @@ body{
 
 hr{
   border-color: rgb(89, 0, 255);
+  margin: 40px 0px;
 }
 
 h1{
@@ -65,9 +66,10 @@ pre code{
   border: 0.5px solid rgb(89, 0, 255);
   display:block;
   font-size: 16px;
-  white-space: pre-wrap;
-  word-wrap: normal;
-  margin: 30px;
+  overflow-x: scroll;
+  /*white-space: pre-wrap;
+  word-wrap: normal;*/
+  margin: 0px 30px;
   padding: 20px;
 }
 
