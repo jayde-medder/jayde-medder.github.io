@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Ubuntu+Mono&display=swap');
 
+
 a:link{
   text-decoration: none;
   color: inherit;
@@ -31,10 +32,19 @@ button:hover{
   left: 5px;
 }
 
+body{
+  background-color: rgb(2, 2, 2);
+  font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: rgb(89, 0, 255);
+  padding: 5vh 5vw;
+  @media(min-width: 800px){
+    width: 814px
+  }
+}
+
 hr{
   border-color: rgb(89, 0, 255);
 }
-
 
 h1{
   font-size: 40px;
@@ -43,21 +53,22 @@ h1{
 }
 
 h2{
-  font-size: 22px;
+  font-size: 24px;
 }
 
 h3{
-  font-size: 20px;
+  font-size: 18px;
 }
 
-body{
-  background-color: rgb(2,2,2);
-  font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(89, 0, 255);
-  padding: 5vh 5vw;
-  @media(min-width: 800px){
-    width: 70%
-  }
+pre code{
+  background-color: rgb(22, 0, 63);
+  border: 0.5px solid rgb(89, 0, 255);
+  display:block;
+  font-size: 16px;
+  white-space: pre-wrap;
+  word-wrap: normal;
+  margin: 30px;
+  padding: 20px;
 }
 
 .accordion {
@@ -67,6 +78,7 @@ body{
     align-items: baseline;
   /*}*/
   border: 0.5px solid rgb(89, 0, 255);
+  max-width: 814px;
 }
 
 .accordion .container {
