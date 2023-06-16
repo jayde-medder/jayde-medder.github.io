@@ -1,41 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Ubuntu+Mono&display=swap');
 
-
-a:link{
-  text-decoration: none;
-  color: inherit;
-}
-
-a:visited{
-  text-decoration: none;
-  color: inherit;
-}
-
-a:active{
-  text-decoration: none;
-  color: inherit;
-}
-
-a:hover{
-  background-color: rgb(22, 0, 63);
-}
-
-button:hover{
-  background-color: rgb(22, 0, 63);
-}
-
-.goback{
-  font-size: 18px;
-  position: absolute;
-  color: rgb(89, 0, 255);
-  top: 5px;
-  left: 5px;
+:root{
+  --main-color: rgb(101, 77, 255);
 }
 
 body{
   background-color: rgb(2, 2, 2);
   font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(89, 0, 255);
+  color: var(--main-color);
   padding: 5vh 5vw;
   @media(min-width: 800px){
     width: 814px
@@ -43,14 +15,14 @@ body{
 }
 
 hr{
-  border-color: rgb(89, 0, 255);
+  border-color: var(--main-color);
   margin: 40px 0px;
 }
 
 h1{
   font-size: 40px;
   font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: rgb(89, 0, 255);
+  color: var(--main-color);
 }
 
 h2{
@@ -63,7 +35,7 @@ h3{
 
 pre code{
   background-color: rgb(22, 0, 63);
-  border: 0.5px solid rgb(89, 0, 255);
+  border: 0.5px solid var(--main-color);
   display:block;
   font-size: 16px;
   overflow-x: scroll;
@@ -79,12 +51,12 @@ pre code{
     flex-wrap: wrap;
     align-items: baseline;
   /*}*/
-  border: 0.5px solid rgb(89, 0, 255);
+  border: 0.5px solid var(--main-color);
   max-width: 814px;
 }
 
 .accordion .container {
-  border: 0.5px solid rgb(89, 0, 255);
+  border: 0.5px solid var(--main-color);
   flex-grow: 1;
   flex-basis: 250px;
   flex-direction: column;
@@ -93,11 +65,11 @@ pre code{
 }
 
 .accordion .label {
-  border: 0.5px solid rgb(89, 0, 255);
+  border: 0.5px solid var(--main-color);
   position: relative;
   padding: 10px 10px;
   font-size: 20px;
-  color: rgb(89, 0, 255);
+  color: var(--main-color);
   cursor: pointer;
 }
 
@@ -107,7 +79,7 @@ pre code{
 
 .accordion .label::before {
   content: '+';
-  color: rgb(89, 0, 255);
+  color: var(--main-color);
   position: absolute;
   top: 50%;
   right: 10px;
@@ -129,7 +101,7 @@ pre code{
 .accordion hr {
   width: 100;
   margin-left: 0;
-  border: 0.5px solid rgb(89, 0, 255);
+  border: 0.5px solid var(--main-color);
 }
 
 .accordion .container.active .content {
@@ -159,12 +131,12 @@ pre code{
   }
   height: 8em;
   width: 8em;
-  border: 0.5px solid rgb(89, 0, 255);
+  border: 0.5px solid var(--main-color);
   margin: 10px 10px;
 }
 
 .box{
-  border: 0.5px solid rgb(89, 0, 255);
+  border: 0.5px solid var(--main-color);
   box-sizing: border-box;
   @media(max-width:371px){
     height: 1.5em;
@@ -217,4 +189,35 @@ pre code{
   }
   font-size: 14px;
   margin: 10px 10px;
+}
+
+a:link{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:visited{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:active{
+  text-decoration: none;
+  color: inherit;
+}
+
+a:hover{
+  background-color: rgb(22, 0, 63);
+}
+
+button:hover{
+  background-color: rgb(22, 0, 63);
+}
+
+.goback{
+  font-size: 18px;
+  position: absolute;
+  color: var(--main-color);
+  top: 5px;
+  left: 5px;
 }
