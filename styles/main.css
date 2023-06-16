@@ -39,10 +39,19 @@ pre code{
   display:block;
   font-size: 16px;
   overflow-x: scroll;
-  /*white-space: pre-wrap;
-  word-wrap: normal;*/
   margin: 0px 30px;
   padding: 20px;
+}
+
+.textbox {
+  background-color: rgb(22, 0, 63);
+  border: 0.5px solid var(--main-color);
+  display:block;
+  font-size: 16px;
+  white-space: pre-wrap;
+  word-wrap: normal;
+  margin: 0px 0px;
+  padding: 0px 20px;
 }
 
 .accordion {
