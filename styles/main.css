@@ -43,6 +43,29 @@ pre code{
   padding: 20px;
 }
 
+ul{
+  margin-top: 0px;
+}
+
+li {
+	margin: 10px -35px;
+	padding: 0px 0px 0px 30px;
+	list-style: none;
+	background-image: url("../images/sakura.png");
+	background-repeat: no-repeat;
+	background-position: left center;
+	background-size: 20px;
+}
+
+.grid {
+  display: inline-grid;
+  grid-gap: 10px;
+  grid-template-columns: 40% 60%;
+  border: 0.5px solid var(--main-color);
+  padding: 10px 20px 10px 10px;
+  margin: 20px;
+}
+
 .textbox {
   background-color: rgb(22, 0, 63);
   border: 0.5px solid var(--main-color);
@@ -52,6 +75,21 @@ pre code{
   word-wrap: normal;
   margin: 0px 0px;
   padding: 0px 20px;
+}
+
+.grid .textbox{
+  padding: 20px;
+}
+
+.grid .textbox ul{
+  padding: 0px 0px 0px 0px;
+}
+
+.grid .textbox li {
+  background-image: none;
+  list-style:square;
+  margin: 0px 0px 0px 10px;
+  padding: 0px 0px 0px 0px;
 }
 
 .accordion {
