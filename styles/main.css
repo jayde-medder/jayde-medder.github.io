@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@200&family=Ubuntu+Mono&display=swap');
 
+
+/*declare global main colour variable*/
 :root{
   --main-color: rgb(101, 77, 255);
 }
@@ -14,6 +16,7 @@ body{
   }
 }
 
+/*line divider*/
 hr{
   border-color: var(--main-color);
   margin: 40px 0px;
@@ -33,6 +36,7 @@ h3{
   font-size: 18px;
 }
 
+/*code block styling*/
 pre code{
   background-color: rgb(22, 0, 63);
   border: 0.5px solid var(--main-color);
@@ -43,10 +47,12 @@ pre code{
   padding: 20px;
 }
 
+/*main list container styling*/
 ul{
   margin-top: 0px;
 }
 
+/*list item styling, list-style-image is not very functional so used background-image and modified padding*/
 li {
 	margin: 10px -35px;
 	padding: 0px 0px 0px 30px;
@@ -57,6 +63,7 @@ li {
 	background-size: 20px;
 }
 
+/*grid styling, currently only used on te-whare-tapa-wha page*/
 .grid {
   display: inline-grid;
   grid-gap: 10px;
@@ -66,6 +73,7 @@ li {
   margin: 20px;
 }
 
+/*textbox for separating sections from body text. eg. problem solving blog*/
 .textbox {
   background-color: rgb(22, 0, 63);
   border: 0.5px solid var(--main-color);
@@ -77,14 +85,17 @@ li {
   padding: 0px 20px;
 }
 
+/*i reused my textbox styling for the grids squares*/
 .grid .textbox{
   padding: 20px;
 }
 
+/*list styling needed some editing for use within grids*/
 .grid .textbox ul{
   padding: 0px 0px 0px 0px;
 }
 
+/*list styling needed some editing for use within grids*/
 .grid .textbox li {
   background-image: none;
   list-style:square;
@@ -92,6 +103,7 @@ li {
   padding: 0px 0px 0px 0px;
 }
 
+/*accordion menus on index page*/
 .accordion {
   /*@media(min-width: 899px){*/
     display: flex;
@@ -102,6 +114,7 @@ li {
   max-width: 814px;
 }
 
+/*container which contains label and content for each drop down menu*/
 .accordion .container {
   border: 0.5px solid var(--main-color);
   flex-grow: 1;
@@ -134,6 +147,7 @@ li {
   transform: translateY(-50%);
 }
 
+/*content of menus is hidden before it uses the javascript to expand*/
 .accordion .content {
   position: relative;
   content-visibility: hidden;
@@ -145,12 +159,14 @@ li {
   transition: 0.5s;
 }
 
+/*this might be redundant now, will check soon*/
 .accordion hr {
   width: 100;
   margin-left: 0;
   border: 0.5px solid var(--main-color);
 }
 
+/*when container is active it's height is modified*/
 .accordion .container.active .content {
   height: 8em;
   content-visibility: visible;
@@ -160,6 +176,10 @@ li {
   content: '-';
   font-size: 30px;
 }
+
+/****DEMOS****/
+/*the following contain styling only used on css concepts blog*/
+/*they demonstrate different position propertyies*/
 
 .demos{
   display: flex;
@@ -238,6 +258,8 @@ li {
   margin: 10px 10px;
 }
 
+/***editing link styling to get rid of underline and add hover colour***/
+
 a:link{
   text-decoration: none;
   color: inherit;
@@ -261,6 +283,7 @@ button:hover{
   background-color: rgb(22, 0, 63);
 }
 
+/*styling for go back button on all blog pages*/
 .goback{
   font-size: 18px;
   position: absolute;
