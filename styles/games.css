@@ -3,8 +3,9 @@
 
 /*declare global main colour variable*/
 :root{
-  --main-color: #7067e5;
-  --large-text: #594dff;
+  --main-color: #67e580;
+  --large-text: #24d748;
+  --highlight-color: #1d3e25;
 }
 
 body{
@@ -26,7 +27,7 @@ button {
 }
 
 button:hover{
-  background-color: rgb(22, 0, 63);
+  background-color: var(--highlight-color);
 }
 
 table {
@@ -53,14 +54,14 @@ td {
 }
 
 td:hover{
-  background-color: rgb(22, 0, 63);
+  background-color: var(--highlight-color);
 }
 
 h2 {
   margin: 0;
   text-align: left;
   font-size: 18px;
-  color: var(--main-color);
+  color: var(--large-text);
 }  
 
 h3 {
@@ -92,7 +93,7 @@ a:active{
 }
 
 a:hover{
-  background-color: rgb(22, 0, 63);
+  background-color: var(--highlight-color);
 }
 
 #mole {
