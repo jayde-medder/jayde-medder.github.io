@@ -51,7 +51,7 @@ function displayNewMole() {
   //create img element
   const moleImage = document.createElement('img')
   moleImage.src = '../images/sakura.png'
-  moleImage.id = 'flower'
+  moleImage.id = 'mole'
 
   //place mole
   cells[randomIndex].appendChild(moleImage)
@@ -72,8 +72,6 @@ function moleWhacked(event) {
     clickedMole.parentNode.removeChild(clickedMole)
     counter++
     updateCounterDisplay()
-    const whackAudio = new Audio('whack-audio.wav')
-    whackAudio.play()
     displayNewMole()
   }
 }

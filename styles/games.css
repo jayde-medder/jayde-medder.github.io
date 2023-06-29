@@ -11,8 +11,6 @@ body{
   font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--main-color);
   padding: 5vh 5vw;
-  width: 400px;
-  text-align: center;
 }
 
 button {
@@ -23,6 +21,7 @@ button {
   font-size: 18px;
   width: 300px;
   height: 50px;
+  margin: 20px 0px 20px 0px;
 }
 
 button:hover{
@@ -30,9 +29,6 @@ button:hover{
 }
 
 table {
-  margin-right: center;
-  margin-left: center;
-  margin: 0 auto;
   border-spacing: 0;
   border-collapse: collapse;
 }
@@ -49,6 +45,7 @@ td {
   width: 100px;
   height: 100px;
   text-align: center;
+  justify-items: center;
   font-size: 300%;
   border: var(--main-color) solid 0.5px;
   color: var(--main-color);
@@ -66,7 +63,6 @@ h2 {
 }  
 
 h3 {
-  text-align: center;
   font-size: 18px;
   color: var(--main-color);
 }
@@ -98,6 +94,8 @@ a:hover{
   background-color: rgb(22, 0, 63);
 }
 
-#flower {
-  width: 100%;
+#mole {
+  width: 80%;
+  height: 80%;
+  
 }
