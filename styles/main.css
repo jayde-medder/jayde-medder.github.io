@@ -4,7 +4,9 @@
 /*declare global main colour variable*/
 :root{
   --main-color: #67e580;
-  --large-text: #67e580;
+  --large-text: #24d748;
+  --textbox-color: #102215;
+  --highlight-color: #1d3e25;
 }
 
 body{
@@ -39,7 +41,7 @@ h3{
 
 /*code block styling*/
 pre code{
-  background-color: rgb(22, 0, 63);
+  background-color: var(--textbox-color);
   border: 0.5px solid var(--main-color);
   display:block;
   font-size: 16px;
@@ -55,13 +57,16 @@ ul{
 
 /*list item styling, list-style-image is not very functional so used background-image and modified padding*/
 li {
-	margin: 10px -35px;
+  list-style: square;
+  margin: 5px -10px;
+  /**change to this code to change bullet point to image**/
+	/*margin: 10px -35px;
 	padding: 0px 0px 0px 30px;
 	list-style: none;
 	background-image: url("../images/sakura.png");
 	background-repeat: no-repeat;
 	background-position: left center;
-	background-size: 20px;
+	background-size: 20px;*/
 }
 
 /*grid styling, currently only used on te-whare-tapa-wha page*/
@@ -76,7 +81,7 @@ li {
 
 /*textbox for separating sections from body text. eg. problem solving blog*/
 .textbox {
-  background-color: rgb(22, 0, 63);
+  background-color: var(--textbox-color);
   border: 0.5px solid var(--main-color);
   display:block;
   font-size: 16px;
@@ -135,7 +140,7 @@ li {
 }
 
 .accordion .label:hover {
-  background-color: rgb(22, 0, 63);
+  background-color: var(--highlight-color);
 }
 
 .accordion .label::before {
@@ -277,11 +282,11 @@ a:active{
 }
 
 a:hover{
-  background-color: rgb(22, 0, 63);
+  background-color: var(--highlight-color);
 }
 
 button:hover{
-  background-color: rgb(22, 0, 63);
+  background-color: var(--highlight-color);
 }
 
 /*styling for go back button on all blog pages*/
