@@ -3,7 +3,8 @@
 
 /*declare global main colour variable*/
 :root{
-  --main-color: rgb(101, 77, 255);
+  --main-color: #7067e5;
+  --large-text: #594dff;
 }
 
 body{
@@ -38,7 +39,7 @@ h1 {
   margin-bottom: 10px;
   text-align: left;
   font-size: 40px;
-  color: var(--main-color)
+  color: var(--large-text)
 }
 
 td {

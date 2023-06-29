@@ -3,11 +3,12 @@
 
 /*declare global main colour variable*/
 :root{
-  --main-color: rgb(101, 77, 255);
+  --main-color: #67e580;
+  --large-text: #67e580;
 }
 
 body{
-  background-color: rgb(2, 2, 2);
+  background-color: #020202;
   font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: var(--main-color);
   padding: 5vh 5vw;
@@ -25,7 +26,7 @@ hr{
 h1{
   font-size: 40px;
   font-family: Roboto Mono, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  color: var(--main-color);
+  color: var(--large-text);
 }
 
 h2{
